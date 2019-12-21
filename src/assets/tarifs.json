@@ -1,0 +1,36 @@
+[{
+    "name": "Basic",
+    "price": "129",
+    "benefits": ["Benefit-1", "Benefit-2", "Benefit-3"],
+    "download_speed": 4,
+    "upload_speed": 6
+  },
+  {
+    "name": "Second",
+    "price": "139",
+    "benefits": ["Benefit-1", "Benefit-2", "Benefit-3"],
+    "download_speed": 10,
+    "upload_speed": 6
+  },
+  {
+    "name": "Super",
+    "price": "329",
+    "benefits": ["Benefit-1", "Benefit-2", "Benefit-3"],
+    "download_speed": 20,
+    "upload_speed": 6
+  },
+  {
+    "name": "Extra",
+    "price": "429",
+    "benefits": ["Benefit-1", "Benefit-2", "Benefit-3"],
+    "download_speed": 30,
+    "upload_speed": 6
+  },
+  {
+    "name": "Pro",
+    "price": "469",
+    "benefits": ["Benefit-1", "Benefit-2", "Benefit-3"],
+    "download_speed": 50,
+    "upload_speed": 6
+  }
+]

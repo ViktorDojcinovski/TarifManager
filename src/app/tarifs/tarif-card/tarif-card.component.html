@@ -1,0 +1,41 @@
+<div class="tarif-card">
+  <div class="index-section">
+    <p>
+      {{ index + 1 }}
+    </p>
+  </div>
+  <div class="name-section">
+    <h3>
+              {{ tarif.name }}
+            </h3>
+  </div>
+  <div class="bandwith-section">
+    <div class="dload">
+      <label>Download</label>
+      <p>
+        <span>&darr;</span>
+        {{ tarif.download_speed }} Mbps
+      </p>
+    </div>
+    <div class="upload">
+      <label>Upload</label>
+      <p>
+        <span>&uarr;</span>
+        {{ tarif.upload_speed }} Mbps
+      </p>
+    </div>
+  </div>
+  <div class="benefits-section">
+    <ul>
+      <li *ngFor="let benefit of tarif.benefits">
+        {{ benefit }}
+      </li>
+    </ul>
+  </div>
+  <div class="price-section">
+    <p>
+      {{ tarif.price }} €
+    </p>
+    <button>To tarif</button>
+  </div>
+</div>

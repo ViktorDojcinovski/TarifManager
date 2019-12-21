@@ -1,0 +1,8 @@
+<h2>Tarif List</h2>
+<div>
+  Sort by:
+  <button (click)="orderByField = 'name'">name</button>
+  <button (click)="orderByField = 'price'">price</button>
+  <button (click)="orderByField = 'download_speed'">download_speed</button>
+</div>
+<app-tarif-card *ngFor="let tarif of tarifs | orderBy:orderByField; let i = index" [tarif]="tarif" [index]="i"></app-tarif-card>
