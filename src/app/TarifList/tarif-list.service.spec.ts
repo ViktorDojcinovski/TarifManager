@@ -1,6 +1,6 @@
 import { TestBed } from "@angular/core/testing";
 
-import { TarifService } from "./tarif.service";
+import { TarifService } from "./tarif-list.service";
 
 describe("TarifServiceService", () => {
   beforeEach(() => TestBed.configureTestingModule({}));

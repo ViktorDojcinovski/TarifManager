@@ -4,7 +4,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { CoreModule } from "./core/core.module";
 import { AppRoutingModule } from "./app-routing.module";
-import { TarifsModule } from "./tarifs/tarifs.module";
+import { TarifsModule } from "./TarifList/tarifs.module";
 import { AppComponent } from "./app.component";
 
 @NgModule({
@@ -14,9 +14,9 @@ import { AppComponent } from "./app.component";
     HttpClientModule,
     CoreModule,
     AppRoutingModule,
-    TarifsModule
+    TarifsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -6,12 +6,12 @@ const routes: Routes = [
   {
     path: "tarifs",
     loadChildren: () =>
-      import("./tarifs/tarifs.module").then(m => m.TarifsModule)
-  }
+      import("./TarifList/tarifs.module").then((m) => m.TarifsModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -2,19 +2,19 @@ import {
   Component,
   OnInit,
   ChangeDetectionStrategy,
-  Input
+  Input,
 } from "@angular/core";
 
-import { ITarif } from "src/app/shared/models/tarif.model";
+import { Tarif } from "src/app/models/tarif.model";
 
 @Component({
   selector: "app-tarif-list",
   templateUrl: "./tarif-list.component.html",
   styleUrls: ["./tarif-list.component.scss"],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TarifListComponent implements OnInit {
-  @Input() tarifs: ITarif[];
+  @Input() tarifs: Tarif[];
   orderByField: string;
 
   constructor() {}
